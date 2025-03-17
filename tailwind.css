@@ -1,0 +1,41 @@
+/*Tailwind css file*/
+@import "tailwindcss";
+
+@theme {
+    --color-*: initial; /* Disable all default Tailwind colors */
+    /*--font-sans: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;*/
+    --font-sans: initial;
+    --font-mono: initial;
+    --default-mono-*: initial;
+
+    --spacing: 0.625rem;
+    /*--spacing: 10px;*/
+
+    --text-xl: 1.4rem;
+
+    /* Default tailwind breakpoints */
+    --breakpoints-sm: 40rem;
+    --breakpoints-md: 48rem;
+    --breakpoints-lg: 64rem;
+    --breakpoints-xl: 80rem;
+    --breakpoints-2xl: 96rem;
+}
+
+@custom-variant hocus (&:hover, &:focus);
+
+@utility container {
+    max-width: 100%;
+    @variant sm {
+        max-width: var(--breakpoints-sm, theme('screens.sm'));
+    }
+    @variant md {
+        max-width: var(--breakpoints-md, theme('screens.md'));
+    }
+    @variant lg {
+        max-width: var(--breakpoints-lg, theme('screens.lg'));
+    }
+    /* Not sure if i also want xl */
+    /*@variant xl {*/
+    /*    max-width: theme('screens.xl');*/
+    /*}*/
+}

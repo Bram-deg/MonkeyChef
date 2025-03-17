@@ -1,0 +1,36 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Docker/Dockerfile
+    container_name: nginx-monkeychef
+    ports:
+      - "80:80"
+    restart: always
+    volumes:
+      - ./logs:/var/log/nginx
+      - ./:/var/www/html
+    networks:
+      - my_network
+  php:
+    image: php:8.4-fpm-alpine
+    container_name: php
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - my_network
+  tailwind:
+    build:
+      context: .
+      dockerfile: ./Docker/TaillSassDockerfile
+    volumes:
+      - ./:/app
+    container_name: tailwind
+    command: bash Docker/css.sh
+    networks:
+      - my_network
+
+
+networks:
+  my_network:
+    driver: bridge

@@ -1,0 +1,44 @@
+# Use a minimal base image with curl and bash
+FROM ubuntu:24.04
+
+WORKDIR /app
+
+ENV TAILWIND_VERSION=v4.0.8 \
+    TAILWIND_EXECUTABLE=tailwindcss-linux-arm64
+ENV SASS_VERSION=1.85.0
+ENV SASS_ARCHIVE=dart-sass-${SASS_VERSION}-linux-arm64.tar.gz
+
+# copy css.sh to the container
+COPY Docker/css.sh .
+# remove any trailing characters from the file
+RUN sed -i 's/\r$//' css.sh && \
+    chmod +x css.sh
+
+# Install necessary dependencies (curl, bash, watchman, nodejs, npm)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    bash \
+    watchman \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && apt-get install -y npm \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /var/lib/apt/lists/* && \
+    #&& npm install -g purgecss && \ # Install Sass from GitHub
+    curl -sLO https://github.com/sass/dart-sass/releases/download/${SASS_VERSION}/${SASS_ARCHIVE} \
+    && tar -xzf ${SASS_ARCHIVE} \
+    && mv dart-sass /usr/local/lib/dart-sass \
+    && ln -s /usr/local/lib/dart-sass/sass /usr/local/bin/sass \
+    && rm -rf ${SASS_ARCHIVE} && \
+    # Download the Tailwind CSS standalone build from GitHub
+    curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/download/${TAILWIND_VERSION}/${TAILWIND_EXECUTABLE} \
+    && chmod +x ${TAILWIND_EXECUTABLE} \
+    && mv ${TAILWIND_EXECUTABLE} /usr/local/bin/tailwindcss \
+    # Install postcss-cli, autoprefixer and cssnano
+    && npm install -g postcss postcss-cli autoprefixer \
+    # Install PurgeCSS
+    && npm i -g purgecss \
+    && npm i -g postcss-prune-var
+
+# tail to see the output
+CMD ["tail", "-f", "/dev/null"]
