@@ -12,6 +12,7 @@ body {
 h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 ul {
@@ -135,8 +136,11 @@ form {
 footer {
     display: flex;
     color: lightgray;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     padding: 20px;
     background-color: violet;
+}
+
+footer p {
+    margin: 0;
 }
