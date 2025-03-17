@@ -60,8 +60,8 @@
 <body>
 <?php include_once "components/base-header.php" ?>
 <div class="container">
-    <h1>Letterteller</h1>
-    <textarea id="text-input" placeholder="dit is tekst over de wijze monkey chef. Hij is goed in koken maar hij is zijn mobiel kwijt!!" oninput="updateStats()"></textarea>
+    <h1 class="hover:rotate-360 transition-transform duration-500">Letterteller</h1>
+    <textarea id="text-input" placeholder="Typ je tekst hier..." oninput="updateStats()"></textarea>
 
     <div class="options">
         <label>
