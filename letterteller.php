@@ -59,7 +59,7 @@
 </head>
 <body>
 <?php include_once "components/base-header.php" ?>
-<div class="container">
+<main class="container">
     <h1 class="hover:rotate-360 transition-transform duration-500">Letterteller</h1>
     <textarea id="text-input" placeholder="Typ je tekst hier..." oninput="updateStats()"></textarea>
 
@@ -77,7 +77,7 @@
         <p>Aantal zinnen: <span id="sentence-count">0</span></p>
         <p>Leestijd: <span id="reading-time">0</span> minuten</p>
     </div>
-</div>
+</main>
 <?php include_once "components/base-footer.php" ?>
 <script src="scripts/letterteller.js"></script>
 </body>

@@ -7,6 +7,13 @@
 body {
     background-color: aliceblue;
     font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
 }
 
 h1 {

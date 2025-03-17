@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 counter.classList.add('pop');
             }
             count++;
-        }, 50);
+        }, 20);
     }
 
     // Call the function to create the counting paragraph
