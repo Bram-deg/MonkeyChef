@@ -1,3 +1,6 @@
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 document.addEventListener('DOMContentLoaded', function() {
     const img = document.querySelector('img');
 
@@ -12,9 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function createCountingParagraph() {
         const counter = document.getElementById('counter');
         let count = 1;
+        let maxcount = getRandomInt(1,100)
         const intervalId = setInterval(() => {
             counter.textContent = count;
-            if (count === 28) {
+            if (count === maxcount) {
                 clearInterval(intervalId);
                 counter.classList.add('pop');
             }
