@@ -6,14 +6,6 @@
     <title>Tekstanalyse Applicatie</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            font-family: system-ui, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-        }
-
         .container {
             background-color: #fff;
             padding: 20px;
