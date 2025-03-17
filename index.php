@@ -19,7 +19,7 @@
         <img src="Monkey.png" alt="this monkey is missing!">
         <div class="monkey-call">You have <span id="counter">0</span> missed messages from Monkey Chef!!</div>    </section>
         <section id="form-section">
-            <h2>Contact</h2>
+            <h2 class="underline">Contact</h2>
             <form action="">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Name">
