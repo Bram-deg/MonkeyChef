@@ -1,0 +1,141 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: violet;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+/* Image Styles */
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pop {
+    animation: pop 0.5s ease-in-out;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: 10px solid violet;
+}
+
+/* Section Styles */
+section {
+    margin: 50px;
+}
+
+/* Class Styles */
+.monkey-call {
+    display: flex;
+    align-items: center;
+    color: green;
+    font-style: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#counter {
+    margin: 0 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+/* Form Styles */
+label {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    flex: 1;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 33%;
+    margin-left: 0;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: violet;
+}
