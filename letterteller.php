@@ -11,9 +11,6 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
         }
 
@@ -68,6 +65,7 @@
     </style>
 </head>
 <body>
+<?php include_once "components/base-header.php" ?>
 <div class="container">
     <h1>Letterteller</h1>
     <textarea id="text-input" placeholder="Typ je tekst hier..." oninput="updateStats()"></textarea>

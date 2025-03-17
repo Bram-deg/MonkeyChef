@@ -8,14 +8,7 @@
     <title>Monkey Chef</title>
 </head>
 <body>
-    <header>Monkey Chef
-        <nav>
-            <ul>
-                <li><a href="/letterteller.php">Teller</a></li>
-                <li><a href="#form-section">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include_once "components/base-header.php" ?>
     <main>
         <section>
             <h1>Monkey Chef</h1>
