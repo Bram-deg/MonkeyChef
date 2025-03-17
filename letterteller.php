@@ -87,7 +87,7 @@
         <p>Leestijd: <span id="reading-time">0</span> minuten</p>
     </div>
     <footer>
-        <a href="/" class="hover:scale-1">&copy; SegerEnd <?php echo date('Y'); ?></a>
+        <a href="/" class="hover:rotate-10 transition-transform duration-500">&copy; MonkeyChef <?php echo date('Y'); ?></a>
     </footer>
 </div>
 <script>
