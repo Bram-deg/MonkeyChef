@@ -60,7 +60,7 @@
 <body>
 <?php include_once "components/base-header.php" ?>
 <div class="container">
-    <h1>Letterteller</h1>
+    <h1 class="hover:rotate-360 transition-transform duration-500">Letterteller</h1>
     <textarea id="text-input" placeholder="Typ je tekst hier..." oninput="updateStats()"></textarea>
 
     <div class="options">
