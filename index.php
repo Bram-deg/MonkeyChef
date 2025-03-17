@@ -29,8 +29,6 @@
             </form>
         </section>
     </main>
-    <footer>
-        <p>© 2025 Monkey Chef</p>
-    </footer>
+    <?php include_once "components/base-footer.php" ?>
 </body>
 </html>

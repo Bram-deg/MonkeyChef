@@ -77,10 +77,8 @@
         <p>Aantal zinnen: <span id="sentence-count">0</span></p>
         <p>Leestijd: <span id="reading-time">0</span> minuten</p>
     </div>
-    <footer>
-        <a href="/" class="hover:rotate-10 transition-transform duration-500">&copy; MonkeyChef <?php echo date('Y'); ?></a>
-    </footer>
 </div>
+<?php include_once "components/base-footer.php" ?>
 <script src="scripts/letterteller.js"></script>
 </body>
 </html>
