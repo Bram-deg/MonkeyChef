@@ -13,7 +13,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 80%;
             max-width: 600px;
-            margin: 3rem auto auto;
+            margin: 3rem auto 3rem auto;
         }
 
         h1 {
