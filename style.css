@@ -10,8 +10,8 @@ body {
 }
 
 h1 {
-    color: red;
     font-size: 50px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -134,6 +134,7 @@ form {
 /* Footer Styles */
 footer {
     display: flex;
+    color: lightgray;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
