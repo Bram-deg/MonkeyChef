@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const showCharLimitCheckbox = document.getElementById('show-char-limit');
+    const charLimitContainer = document.getElementById('char-limit-container');
+
+    showCharLimitCheckbox.addEventListener('change', function() {
+        if (showCharLimitCheckbox.checked) {
+            charLimitContainer.style.display = 'block';
+        } else {
+            charLimitContainer.style.display = 'none';
+        }
+    });
+});
+
 function updateStats() {
     const textInput = document.getElementById('text-input').value;
     const excludeSpaces = document.getElementById('exclude-spaces').checked;

@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a61d038c-d406-4a86-bc99-d5953516b13e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/base-footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/base-footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/letterteller.php" beforeDir="false" afterPath="$PROJECT_DIR$/letterteller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/letterteller.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/letterteller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +82,7 @@
       <updated>1742211349505</updated>
       <workItem from="1742211350559" duration="1070000" />
       <workItem from="1742213386014" duration="64000" />
+      <workItem from="1742228243912" duration="134000" />
     </task>
     <servers />
   </component>

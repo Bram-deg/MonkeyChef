@@ -26,6 +26,7 @@
                 <label for="phone">Phone number</label>
                 <input type="text" name="phone" id="phone" placeholder="Phone">
                 <button type="submit">Send</button>
+                <div id="form-message" style="margin-top: 10px; font-size: 16px;"></div>
             </form>
         </section>
     </main>

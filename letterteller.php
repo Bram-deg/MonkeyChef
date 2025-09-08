@@ -58,18 +58,20 @@
     </style>
 </head>
 <body>
-<?php include_once "components/base-header.php" ?>
 <main class="container">
-    <h1 class="hover:rotate-360 transition-transform duration-500">Letterteller</h1>
+    <h1>Lekker tellen</h1>
     <textarea id="text-input" placeholder="Typ je tekst hier..." oninput="updateStats()"></textarea>
 
     <div class="options">
         <label>
-            <input type="checkbox" id="exclude-spaces" onchange="updateStats()"> Spaties uitzonderen
+            <input type="checkbox" id="exclude-spaces" onchange="updateStats()"> Spaties niet meetellen
         </label>
         <label>
-            Karakterlimiet: <input type="number" id="char-limit" onchange="updateStats()" placeholder="Bijv. 500">
+            <input type="checkbox" id="show-char-limit" onchange="toggleCharLimit()"> Toon karakterlimiet
         </label>
+        <div id="char-limit-container" style="display: none;">
+            Karakterlimiet: <input type="number" id="char-limit" onchange="updateStats()" placeholder="Bijv. 500">
+        </div>
     </div>
     <div id="stats">
         <p>Aantal karakters: <span id="char-count">0</span></p>

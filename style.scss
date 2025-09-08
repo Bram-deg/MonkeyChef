@@ -6,7 +6,7 @@
 }
 body {
     background-color: aliceblue;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "Comic Sans MS", cursive;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -52,7 +52,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: violet;
+    background-color: lightseagreen;
 }
 
 nav {
@@ -84,7 +84,7 @@ img {
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    border: 10px solid violet;
+    border: 10px solid lightseagreen;
 }
 
 /* Section Styles */
@@ -151,7 +151,7 @@ footer {
     color: lightgray;
     justify-content: flex-end;
     padding: 20px;
-    background-color: violet;
+    background-color: lightseagreen;
 }
 
 footer p {
